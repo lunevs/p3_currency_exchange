@@ -1,4 +1,4 @@
-package ru.skillbox.currency.exchange.entity;
+package ru.skillbox.currency.exchange.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -31,4 +31,6 @@ public class Currency {
     @Column(name = "iso_num_code")
     private Long isoNumCode;
 
+    @Column(name = "iso_code")
+    private String isoCode;
 }

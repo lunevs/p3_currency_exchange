@@ -1,4 +1,4 @@
-package ru.skillbox.currency.exchange.dto;
+package ru.skillbox.currency.exchange.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,4 +19,6 @@ public class CurrencyDto {
     private Double value;
 
     private Long isoNumCode;
+
+    private String isoCode;
 }
