@@ -6,12 +6,15 @@ import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Builder
 public class CbrCurrencyItem {
 
     @XmlAttribute(name = "ID")
@@ -30,9 +33,16 @@ public class CbrCurrencyItem {
     private String name;
 
     @XmlElement(name = "Value")
-    private Double nominalValue;
+    private String nominalValue;
 
     @XmlElement(name = "VunitRate")
-    private Double value;
+    private String value;
 
+    public double getNominalValueAsDouble() {
+        return Double.parseDouble(nominalValue.replace(",", "."));
+    }
+
+    public double getValueAsDouble() {
+        return Double.parseDouble(value.replace(",", "."));
+    }
 }

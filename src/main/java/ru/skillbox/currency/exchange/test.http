@@ -4,3 +4,17 @@ GET localhost:8080/api/currency
 
 GET localhost:8080/api/currency/1333
 
+###
+
+GET localhost:8080/api/cbr_list
+
+###
+
+POST http://localhost:8080/users
+    Content-Type: application/json
+
+        {
+          "name": "John Doe",
+          "email": "john.doe@example.com"
+        }
+

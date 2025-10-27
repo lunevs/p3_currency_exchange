@@ -10,14 +10,14 @@ import ru.skillbox.currency.exchange.model.entity.Currency;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CurrencyItemDto {
+public class CurrencyShortViewDto {
 
     private String name;
 
     private Double value;
 
-    public static CurrencyItemDto from(Currency currency) {
-        CurrencyItemDto dto = new CurrencyItemDto();
+    public static CurrencyShortViewDto from(Currency currency) {
+        CurrencyShortViewDto dto = new CurrencyShortViewDto();
         dto.setName(currency.getName());
         dto.setValue(currency.getValue());
         return dto;

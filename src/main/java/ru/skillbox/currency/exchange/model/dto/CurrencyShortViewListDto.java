@@ -12,8 +12,8 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CurrencyListDto {
+public class CurrencyShortViewListDto {
 
-    private List<CurrencyItemDto> currencies = new ArrayList<>();
+    private List<CurrencyShortViewDto> currencies = new ArrayList<>();
 
 }
