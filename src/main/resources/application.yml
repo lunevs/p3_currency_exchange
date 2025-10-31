@@ -25,3 +25,12 @@ app:
   subscription:
     interval: 3600000
     address: https://cbr.ru/scripts/XML_daily.asp
+
+#logging:
+#  level:
+#    ru:
+#      skillbox:
+#        currency:
+#          exchange: INFO
+
+

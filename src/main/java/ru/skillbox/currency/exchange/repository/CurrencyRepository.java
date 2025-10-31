@@ -5,10 +5,11 @@ import ru.skillbox.currency.exchange.model.entity.Currency;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 
 public interface CurrencyRepository extends JpaRepository<Currency, Long> {
 
-    Currency findByIsoNumCode(Long isoNumCode);
+    Optional<Currency> findByIsoNumCode(Long isoNumCode);
 
     List<Currency> findAllByIsoCodeIn(Collection<String> isoCodes);
 
